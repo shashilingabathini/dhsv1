@@ -1,0 +1,52 @@
+<div>
+	
+	<div class="props_container">
+		<table border="0">
+            <tr>
+                <td>Caregiver Id<span class="mandatory">*</span></td>
+                <td><input data-dojo-type="ecm/widget/TextBox" id="${id}_careGiverId" data-dojo-attach-point="_careGiverId"/></td>
+            </tr>
+            <tr><td colspan="2" style="text-align: center;padding: 10px;border-bottom: 1px solid #ccc;"><span class="left_hr"></span> OR <span class="right_hr" ></span></td></tr>
+          	<tr>
+				<td>Last Name <span class="mandatory">*</span></td>
+				<td><input data-dojo-type="ecm/widget/TextBox" id="${id}_lastName" data-dojo-attach-point="_lastName"/></td>
+		    </tr>
+		    <tr> 
+				<td>First Name </td>
+				<td><input data-dojo-type="ecm/widget/TextBox" id="${id}_firstName" data-dojo-attach-point="_firstName"/></td>
+		    </tr>
+		    <tr> 
+				<td>SSN <span class="mandatory">*</span></td>
+				<td><input data-dojo-type="ecm/widget/TextBox" id="${id}_ssn" data-dojo-attach-point="_ssn"/></td>
+		    </tr>
+		    <tr> 
+				<td>DOB <span class="mandatory">*</span></td>
+				<td><input data-dojo-type="ecm/widget/DatePicker" id="${id}_dob" data-dojo-attach-point="_dob" data-dojo-props="constraints:{datePattern: 'yyyy-MM-dd'}"/></td>
+		    </tr>
+		    <tr>	
+		    	<td>Gender</td>
+		    	<td>
+		    		<select data-dojo-type="ecm/widget/Select" id="${id}_gender" data-dojo-attach-point="_gender">
+                             <option value="" selected="selected"></option>
+                             <option value="male">Male</option>
+			    			 <option value="female" >Female</option>
+					</select>
+		    	</td>
+		    </tr>
+		    <tr>
+		    	<td colspan="2"  style="text-align: right;padding-bottom: 7px;">
+		    		<div data-dojo-type="dijit/form/Button" data-dojo-attach-event="click: _apiSearch">search</div>
+		    	</td>
+		    </tr>
+		</table>
+	</div>
+	<div class="grid_container">
+		<div data-dojo-type="gridx/Grid" data-dojo-attach-point="lookupDataGrid" data-dojo-props='
+			modules: [		
+				"gridx/modules/ColumnResizer"
+			]
+		'>
+	</div>
+</div>
+
+</div>

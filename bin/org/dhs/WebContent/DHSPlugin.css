@@ -1,0 +1,42 @@
+._clientIdContaier {
+	margin-bottom: 15px;
+}
+
+._tableCell {
+	padding: 10px;
+}
+
+._lookupItem:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+table {
+	width: 100%
+}
+.mandatory {
+    color : red
+}
+
+.ecmLoginPane .loginForm {
+	  background-image: url('images/stateofhawaii.png') !important;
+	  background-size: 180px 180px !important;
+}
+
+.legal_name {
+	 font-weight: bold;
+    position: absolute;
+    font-size: 15px;
+    left: 45%;
+    color: red;
+    bottom: 25%;
+    z-index: 10;
+}
+
+.legal_message {
+	position: absolute;
+    font-size: 18px;
+    color: white;
+    bottom: 3%;
+    backdrop-filter: blur(100px);
+    padding: 30px 2px;
+}

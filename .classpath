@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/j2ee.jar"/>
+	<classpathentry kind="lib" path="/Users/shashikumar/Desktop/FileNet Libs/log4j.jar"/>
+	<classpathentry kind="lib" path="/Users/shashikumar/Desktop/FileNet Libs/navigatorAPI.jar"/>
+	<classpathentry kind="lib" path="/Users/shashikumar/Desktop/FileNet Libs/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/shashikumar/Desktop/FileNet Libs/DatacapWebPlugin.jar"/>
+	<classpathentry kind="lib" path="/Users/shashikumar/Desktop/FileNet Libs/IERApplicationPlugin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

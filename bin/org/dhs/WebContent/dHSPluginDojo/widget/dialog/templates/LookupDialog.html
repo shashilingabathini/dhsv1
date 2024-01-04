@@ -1,0 +1,54 @@
+<div>
+	<div class="_clientIdContaier">
+		<table>
+			<tr>
+				<td class="_tableCell">
+					<div>
+						<label>First Name</label>
+						<input data-dojo-type="ecm/widget/TextBox" id="${id}_firstName" data-dojo-attach-point="firstName"/>
+					</div>
+				</td>
+				<td  class="_tableCell">
+					<div>
+						<label>Last Name</label>
+						<input data-dojo-type="ecm/widget/TextBox" id="${id}_lastName" data-dojo-attach-point="lastName"/>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td  class="_tableCell">
+					<div>
+						<label>SSN</label>
+						<input data-dojo-type="ecm/widget/TextBox" id="${id}_ssn" data-dojo-attach-point="ssn"/>
+					</div>
+				</td>
+				<td  class="_tableCell">
+					<div>
+						<label>DOB</label>
+						<input data-dojo-type="ecm/widget/DatePicker" id="${id}_dob" data-dojo-attach-point="dob"/>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td  class="_tableCell">
+					<div>
+						<label>Gender</label>
+						<select data-dojo-type="ecm/widget/Select" id="${id}_gender" data-dojo-attach-point="gender">
+							 <option value="male">Male</option>
+			    			 <option value="female" selected="selected">Female</option>
+						</select>
+					</div>
+				</td>
+				<td  class="_tableCell">
+					<div data-dojo-type="dijit/form/Button" data-dojo-attach-event="click: _apiSearch">search</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div data-dojo-type="gridx/Grid" data-dojo-attach-point="lookupDataGrid" data-dojo-props='
+		modules: [		
+			"gridx/modules/ColumnResizer"
+		]
+	'>
+</div>
+</div>

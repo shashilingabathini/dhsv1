@@ -1,0 +1,74 @@
+<div style="overflow:hidden;width:400px;">	
+	<table border="0">
+            <tr>
+                <td>Document Class<span class="mandatory">*</span></td>
+                <td><span data-dojo-attach-point="documentClass" readOnly data-dojo-type="dijit/form/Textarea"  style="width:100%;" data-dojo-attach-event="onKeyUp: _onChange"></span></td>
+            </tr>
+            <tr>
+                <td>Document Type<span class="mandatory">*</span></td>
+                <td>
+					<select data-dojo-attach-point="documentType" data-dojo-type="ecm/widget/Select" style="width:100%;" data-dojo-attach-event="onKeyUp: _onChange">
+				 		<option value="" selected="selected"></option>
+						<option value="Admin Hearings">Admin Hearings</option>
+						<option value="Agreement">Agreement</option>
+						<option value="Applications/ER/SR">Applications/ER/SR</option>
+						<option value="Assets">Assets</option>
+						<option value="Car Insurance">Car Insurance</option>
+						<option value="Changes">Changes</option>
+						<option value="Complaints">Complaints</option>
+						<option value="Component Tracking">Component Tracking</option>
+						<option value="Correspondence">Correspondence</option>
+						<option value="EBT">EBT</option>
+						<option value="Employment Docmuments">Employment Docmuments</option>
+						<option value="Expenses">Expenses</option>
+						<option value="Facility Records">Facility Records</option>
+						<option value="GA">GA</option>
+						<option value="Income">Income</option>
+						<option value="Inspection Reports">Inspection Reports</option>
+						<option value="Intake/Assessments">Intake/Assessments</option>
+						<option value="INVO">INVO</option>
+						<option value="License Compliance Reports">License Compliance Reports</option>
+						<option value="Medical">Medical</option>
+						<option value="Over/Under Payments">Over/Under Payments</option>
+						<option value="Paystubs">Paystubs</option>
+						<option value="Permannent Records">Permannent Records</option>
+						<option value="QC Documents">QC Documents</option>
+						<option value="Reports">Reports</option>
+						<option value="Returned Mail">Returned Mail</option>
+						<option value="Suitability">Suitability</option>
+						<option value="Support Services">Support Services</option>
+						<option value="System Screen Print">System Screen Print</option>
+						<option value="TANF/TAONF/AABD">TANF/TAONF/AABD</option>
+						<option value="Verifications">Verifications</option>
+						<option value="Work Programs">Work Programs</option>
+					</select>
+				</td>
+            </tr>
+           
+ 			<tr>
+                <td>Document Description<span class="mandatory">*</span></td>
+                <td><span data-dojo-attach-point="documentDesc" data-dojo-type="dijit/form/Textarea"  style="width:100%;" data-dojo-attach-event="onKeyUp: _onChange"></span></td>
+            </tr>
+            
+			<tr> 
+				<td>Document Date<span class="mandatory">*</span></td>
+				<td><span data-dojo-attach-point="documentDate" data-dojo-type="ecm/widget/DatePicker"  style="width:100%;" data-dojo-attach-event="onKeyUp: _onChange" value="now"></span></td>			    
+			</tr>
+		    <tr>
+                <td>Form Number<span class="mandatory">*</span></td>
+                <td><span data-dojo-attach-point="formNumber" data-dojo-type="dijit/form/Textarea"  style="width:100%;" data-dojo-attach-event="onKeyUp: _onChange"></span></td>
+            </tr>
+            <tr>
+                <td>Contains FTI<span class="mandatory">*</span></td>
+                <td>
+					<select data-dojo-attach-point="containsFTI" data-dojo-type="ecm/widget/Select"  style="width:100%;" data-dojo-attach-event="onKeyUp: _onChange" >
+						 	<option value="" selected="selected">No</option>
+                             <option value="Yes">Yes</option>
+			    			<option value="No" >No</option>
+					</select>
+				</td>
+            </tr>
+		    
+		</table>
+	
+</div>
